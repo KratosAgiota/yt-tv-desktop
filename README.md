@@ -22,8 +22,3 @@ The Electron app runs YouTube on TVs: fullscreen, borderless, with gamepad API n
 ## Requirements
 - Windows 10/11
 - Node.js (LTS)
-
-## Installation (dev)
-```bash
-npm install
-npm start
