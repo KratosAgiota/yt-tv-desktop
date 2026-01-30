@@ -1,0 +1,40 @@
+{
+  "name": "yt-tv",
+  "version": "1.0.0",
+  "description": "YouTube TV for Desktop",
+  "main": "main.js",
+  "author": "KratosAgiota",
+  "license": "MIT",
+  "type": "commonjs",
+
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+
+  "devDependencies": {
+    "electron": "^40.1.0",
+    "electron-builder": "^24.13.3"
+  },
+
+  "build": {
+    "appId": "com.kratosagiota.yttv",
+    "productName": "YouTube TV",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
